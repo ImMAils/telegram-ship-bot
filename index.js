@@ -9,4 +9,6 @@ export const db = new AceBase("db", {
 
 import("./message_handler.js");
 
+bot.catch((error) => console.error(error))
+
 bot.start();
