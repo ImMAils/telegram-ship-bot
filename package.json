@@ -1,0 +1,20 @@
+{
+  "name": "telegram-sex-bot",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "бот, который шипперит пользователей",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram"
+  ],
+  "author": "immails",
+  "license": "ISC",
+  "dependencies": {
+    "acebase": "^1.29.5",
+    "dotenv": "^16.3.1",
+    "grammy": "^1.19.2"
+  }
+}
