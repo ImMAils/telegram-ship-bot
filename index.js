@@ -1,9 +1,12 @@
 import { Bot } from "grammy"
+import { AceBase } from "acebase"
 (await import("dotenv")).config()
 
 export const bot = new Bot(process.env.TOKEN);
+export const db = new AceBase("db", {
+    "logLevel": "warn",
+})
 
 import("./message_handler.js");
 
-bot.catch((err) => console.error(err))
 bot.start();

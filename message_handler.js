@@ -1,5 +1,7 @@
-import { bot } from "./index.js";
+import { bot, db } from "./index.js";
 
-bot.command(["ship", "шип"], (ctx) => {
-    console.log(ctx)
+bot.on("message", (ctx) => {
+    if(ctx.hasCommand("ship")) return ctx.reply("bruh")
+    db.
+    console.log(ctx.update.message)
 })
