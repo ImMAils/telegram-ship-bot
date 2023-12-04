@@ -5,6 +5,9 @@ import { AceBase } from "acebase"
 export const bot = new Bot(process.env.TOKEN);
 export const db = new AceBase("db", {
     "logLevel": "warn",
+    "storage": {
+        "removeVoidProperties": true,
+    }
 })
 
 import("./message_handler.js");
